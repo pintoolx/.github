@@ -1,0 +1,42 @@
+name: 問題回報
+description: 網站、後台或工具壞掉、行為不對。
+labels: [bug]
+body:
+  - type: input
+    id: where
+    attributes:
+      label: 在哪裡
+      description: 網址、頁面或功能名稱。
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: 發生什麼
+      description: 實際看到的結果，附截圖或錯誤訊息。截圖裡如果有金鑰、錢包私鑰或個人資料，請先遮掉。
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: 預期應該怎樣
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: 重現步驟
+      placeholder: |
+        1. 打開 …
+        2. 點 …
+        3. 看到 …
+  - type: dropdown
+    id: impact
+    attributes:
+      label: 影響
+      options:
+        - 正式站無法使用
+        - 部分功能壞掉
+        - 小問題，不影響使用
+    validations:
+      required: true

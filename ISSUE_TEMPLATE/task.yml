@@ -1,0 +1,30 @@
+name: 任務
+description: 一件要做的事。寫到換任何人或 AI 接手都看得懂。
+labels: []
+body:
+  - type: textarea
+    id: context
+    attributes:
+      label: 背景
+      description: 為什麼要做、現況是什麼。附上相關的 issue、PR、文件連結。
+    validations:
+      required: true
+  - type: textarea
+    id: work
+    attributes:
+      label: 要做什麼
+      description: 具體步驟或範圍。哪些不做也寫出來。
+    validations:
+      required: true
+  - type: textarea
+    id: done
+    attributes:
+      label: 完成標準
+      description: 怎樣算做完、要怎麼驗證。例如：正式站某頁回 200、CI 綠燈、某份文件已更新。
+    validations:
+      required: true
+  - type: input
+    id: due
+    attributes:
+      label: 期限
+      description: 沒有就留空。期限請同時填在看板的 Target date。
