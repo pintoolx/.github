@@ -1,42 +1,42 @@
-name: 問題回報
-description: 網站、後台或工具壞掉、行為不對。
+name: Bug report
+description: A site, the admin or a tool is broken or behaves incorrectly.
 labels: [bug]
 body:
   - type: input
     id: where
     attributes:
-      label: 在哪裡
-      description: 網址、頁面或功能名稱。
+      label: Where
+      description: URL, page or feature name.
     validations:
       required: true
   - type: textarea
     id: what
     attributes:
-      label: 發生什麼
-      description: 實際看到的結果，附截圖或錯誤訊息。截圖裡如果有金鑰、錢包私鑰或個人資料，請先遮掉。
+      label: What happened
+      description: The actual result, with a screenshot or error message. Mask any keys, wallet private keys or personal data in screenshots first.
     validations:
       required: true
   - type: textarea
     id: expected
     attributes:
-      label: 預期應該怎樣
+      label: Expected behavior
     validations:
       required: true
   - type: textarea
     id: steps
     attributes:
-      label: 重現步驟
+      label: Steps to reproduce
       placeholder: |
-        1. 打開 …
-        2. 點 …
-        3. 看到 …
+        1. Open …
+        2. Click …
+        3. See …
   - type: dropdown
     id: impact
     attributes:
-      label: 影響
+      label: Impact
       options:
-        - 正式站無法使用
-        - 部分功能壞掉
-        - 小問題，不影響使用
+        - Production site unusable
+        - Some features broken
+        - Minor, does not block use
     validations:
       required: true

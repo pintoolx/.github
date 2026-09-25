@@ -1,5 +1,5 @@
 blank_issues_enabled: true
 contact_links:
-  - name: 團隊文件與網站地圖
+  - name: Team docs and site map
     url: https://github.com/pintoolx/docs
-    about: 先看 sites.md、links.md 與 documentation.md，確認資訊放哪裡。
+    about: Check sites.md, links.md and documentation.md to see where information lives.

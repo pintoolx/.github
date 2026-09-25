@@ -1,18 +1,18 @@
-## 做了什麼
+## What
 
-<!-- 一到三句。關聯的 issue 寫 Closes #123 -->
+<!-- One to three sentences. Link the issue with Closes #123 -->
 
-## 為什麼
+## Why
 
-## 怎麼驗證
+## How it was verified
 
-<!-- 跑了哪些測試、在哪個網址看過、截圖。沒驗證就寫沒驗證 -->
+<!-- Tests run, URLs checked, screenshots. If it was not verified, say so -->
 
-## 部署影響
+## Deploy impact
 
-<!-- 合併到 main 會部署到哪裡？要不要改環境變數、資料庫或網域？沒有就寫「無」 -->
+<!-- Where does merging to main deploy? Any environment variable, database or domain changes? Write "None" if there are none -->
 
-## 檢查
+## Checks
 
-- [ ] 沒有金鑰、token、私鑰或 `.env` 進到這個 PR（`Secret scan` 通過）
-- [ ] 改了部署或網域的話，README 的 Deployment 段落和 `pintoolx/docs` 的 `sites.md` 一起更新
+- [ ] No keys, tokens, private keys or `.env` files in this PR (`Secret scan` passes)
+- [ ] If deployment or domains changed, the README Deployment section and `sites.md` in `pintoolx/docs` are updated together

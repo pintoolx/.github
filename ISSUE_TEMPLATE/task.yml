@@ -1,30 +1,30 @@
-name: 任務
-description: 一件要做的事。寫到換任何人或 AI 接手都看得懂。
+name: Task
+description: Something to do, written so anyone or any agent can pick it up.
 labels: []
 body:
   - type: textarea
     id: context
     attributes:
-      label: 背景
-      description: 為什麼要做、現況是什麼。附上相關的 issue、PR、文件連結。
+      label: Context
+      description: Why it is needed and the current state. Link related issues, PRs and documents.
     validations:
       required: true
   - type: textarea
     id: work
     attributes:
-      label: 要做什麼
-      description: 具體步驟或範圍。哪些不做也寫出來。
+      label: Work
+      description: Concrete steps or scope. List what is out of scope too.
     validations:
       required: true
   - type: textarea
     id: done
     attributes:
-      label: 完成標準
-      description: 怎樣算做完、要怎麼驗證。例如：正式站某頁回 200、CI 綠燈、某份文件已更新。
+      label: Done criteria
+      description: What counts as done and how to verify it. For example, a production page returns 200, CI is green, a document is updated.
     validations:
       required: true
   - type: input
     id: due
     attributes:
-      label: 期限
-      description: 沒有就留空。期限請同時填在看板的 Target date。
+      label: Due date
+      description: Leave empty if none. Also set Target date on the board.
